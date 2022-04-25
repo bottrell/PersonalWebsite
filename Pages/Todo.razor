@@ -2,12 +2,16 @@
 
 <h3>Todo</h3>
 
-<ul>
+<table>
     @foreach (var item in Todos)
     {
-        <li>@item.Description</li>
+        <tr>
+        <td> @item.Description</td>
+        <td>|</td>
+        <td> @item.DueDate</td>
+        </tr>
     }
-</ul>
+</table>
 
 <input @bind="NewTodo" placeholder="What do you need to do?" />
 <input @bind="DueDate" placeholder="Due Date" />
@@ -25,4 +29,5 @@
     {
         Todos.Add(new(NewTodo, DueDate));
     }
+
 }
