@@ -1,0 +1,28 @@
+@page "/todo"
+
+<h3>Todo</h3>
+
+<ul>
+    @foreach (var item in Todos)
+    {
+        <li>@item.Description</li>
+    }
+</ul>
+
+<input @bind="NewTodo" placeholder="What do you need to do?" />
+<input @bind="DueDate" placeholder="Due Date" />
+<button @onclick="Save">Save</button>
+
+@code {
+    public record TodoItem(string Description, DateTime? DueDate);
+
+    private List<TodoItem> Todos = new List<TodoItem>();
+
+    private string NewTodo = string.Empty;
+    private DateTime? DueDate = null;
+
+    private void Save()
+    {
+        Todos.Add(new(NewTodo, DueDate));
+    }
+}
