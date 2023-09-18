@@ -19,7 +19,7 @@ for details on configuring this project to bundle and minify static web assets. 
 .left-half {
   /*background-color: red;*/
   width: 20%;
-  min-width: 550px;
+  min-width: 520px;
   display: flex;
   align-content: center;
 }
