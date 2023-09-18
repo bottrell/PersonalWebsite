@@ -36,9 +36,13 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/bottrell/Desktop/Dev/PersonalWebsite/Pages/Shared/_Aboutme.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19BYm91dG1lLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = b-pbj46zvv0p
+[/Users/bottrell/Desktop/Dev/PersonalWebsite/Pages/Partials/_Aboutme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvX0Fib3V0bWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-dxdiwhdqiv
+
+[/Users/bottrell/Desktop/Dev/PersonalWebsite/Pages/Partials/_Experienceitem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvX0V4cGVyaWVuY2VpdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-1amq56738s
 
 [/Users/bottrell/Desktop/Dev/PersonalWebsite/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s

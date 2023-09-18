@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Mvc.Razor;
+
 namespace PersonalWebsite;
 
 public class Program
@@ -8,6 +10,11 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddRazorPages();
+        builder.Services.Configure<RazorViewEngineOptions>(options =>
+        {
+            options.PageViewLocationFormats.Add("/Pages/Partials/{0}" + RazorViewEngine.ViewExtension);
+        });
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.

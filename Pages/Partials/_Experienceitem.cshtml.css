@@ -1,0 +1,12 @@
+.experience-container {
+    display: flex;
+    width: 100%;
+}
+
+.experience-date {
+    padding: 10px;
+}
+
+.experience-content {
+    padding: 10px;
+}

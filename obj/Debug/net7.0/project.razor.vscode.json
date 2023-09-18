@@ -24057,8 +24057,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/bottrell/Desktop/Dev/PersonalWebsite/Pages/Shared/_Aboutme.cshtml",
-      "TargetPath": "Pages\\Shared\\_Aboutme.cshtml",
+      "FilePath": "/Users/bottrell/Desktop/Dev/PersonalWebsite/Pages/Partials/_Aboutme.cshtml",
+      "TargetPath": "Pages\\Partials\\_Aboutme.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/bottrell/Desktop/Dev/PersonalWebsite/Pages/Partials/_Experienceitem.cshtml",
+      "TargetPath": "Pages\\Partials\\_Experienceitem.cshtml",
       "FileKind": "mvc"
     }
   ]

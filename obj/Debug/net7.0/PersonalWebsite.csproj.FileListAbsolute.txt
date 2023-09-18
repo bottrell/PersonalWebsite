@@ -29,4 +29,5 @@
 /Users/bottrell/Desktop/Dev/PersonalWebsite/obj/Debug/net7.0/PersonalWebsite.pdb
 /Users/bottrell/Desktop/Dev/PersonalWebsite/obj/Debug/net7.0/PersonalWebsite.genruntimeconfig.cache
 /Users/bottrell/Desktop/Dev/PersonalWebsite/obj/Debug/net7.0/ref/PersonalWebsite.dll
-/Users/bottrell/Desktop/Dev/PersonalWebsite/obj/Debug/net7.0/scopedcss/Pages/Shared/_Aboutme.cshtml.rz.scp.css
+/Users/bottrell/Desktop/Dev/PersonalWebsite/obj/Debug/net7.0/scopedcss/Pages/Partials/_Aboutme.cshtml.rz.scp.css
+/Users/bottrell/Desktop/Dev/PersonalWebsite/obj/Debug/net7.0/scopedcss/Pages/Partials/_Experienceitem.cshtml.rz.scp.css

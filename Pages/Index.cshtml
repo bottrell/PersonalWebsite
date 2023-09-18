@@ -2,8 +2,11 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    @using PersonalWebsite.Pages.Partials;
+    ExperienceItemModel asdf = new ExperienceItemModel();
 }
 
 <div>
     <partial name="_Aboutme" />
+    <partial name="_Experienceitem" model=@asdf />
 </div>

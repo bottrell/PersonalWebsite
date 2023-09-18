@@ -49,3 +49,13 @@ for details on configuring this project to bundle and minify static web assets. 
   background-color: orange;
   width: 50%;
 }
+
+.socials[b-cptkvv37s0] {
+  background-color: pink;
+  width: 50%;
+  align-items: start;
+}
+
+.social-link[b-cptkvv37s0] {
+  margin: 10px;
+}

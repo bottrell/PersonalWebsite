@@ -1,7 +1,20 @@
-/* _content/PersonalWebsite/Pages/Shared/_Aboutme.cshtml.rz.scp.css */
-.about-me[b-pbj46zvv0p] {
+/* _content/PersonalWebsite/Pages/Partials/_Aboutme.cshtml.rz.scp.css */
+.about-me[b-dxdiwhdqiv] {
     width: 60%;
     text-align: left;
+}
+/* _content/PersonalWebsite/Pages/Partials/_Experienceitem.cshtml.rz.scp.css */
+.experience-container[b-1amq56738s] {
+    display: flex;
+    width: 100%;
+}
+
+.experience-date[b-1amq56738s] {
+    padding: 10px;
+}
+
+.experience-content[b-1amq56738s] {
+    padding: 10px;
 }
 /* _content/PersonalWebsite/Pages/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
@@ -54,4 +67,14 @@ for details on configuring this project to bundle and minify static web assets. 
 .intro[b-cptkvv37s0] {
   background-color: orange;
   width: 50%;
+}
+
+.socials[b-cptkvv37s0] {
+  background-color: pink;
+  width: 50%;
+  align-items: start;
+}
+
+.social-link[b-cptkvv37s0] {
+  margin: 10px;
 }
