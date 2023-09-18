@@ -20,7 +20,7 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .left-half {
-  background-color: red;
+  /*background-color: red;*/
   width: 20%;
   min-width: 550px;
   max-height: 60%;
@@ -31,7 +31,7 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .right-half {
   min-width: 550px;
-  background-color: purple;
+  /*background-color: purple;*/
   width: 40%;
   display: flex;
   flex-direction: column;
