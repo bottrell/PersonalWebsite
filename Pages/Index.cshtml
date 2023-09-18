@@ -4,9 +4,18 @@
     ViewData["Title"] = "Home page";
     @using PersonalWebsite.Pages.Partials;
     ExperienceItemModel asdf = new ExperienceItemModel();
+    List<ExperienceItemModel> positions = new List<ExperienceItemModel> {
+new ExperienceItemModel(),
+new ExperienceItemModel(),
+};
 }
 
 <div>
-    <partial name="_Aboutme" />
-    <partial name="_Experienceitem" model=@asdf />
+    @{
+        foreach (ExperienceItemModel position in positions)
+        {
+            <partial name="_Experienceitem" model=@position />
+        }
+    }
+
 </div>
