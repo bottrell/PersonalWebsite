@@ -8,15 +8,17 @@
     @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PersonalWebsite.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
 <body>
     <div class="main">
         <div class="left-half">
             <div class="intro">
-                <h1>Jordan Bottrell</h1>
-                <h3>Data Engineer at Meijer</h3>
-                <h5>I build reliable, scalable software solutions utilizing cloud native technologies.</h5>
+                <h1 id="title">Jordan Bottrell</h1>
+                <h3 id="subtitle">Data Engineer at Meijer</h3>
+                <h5 id="description">I build reliable, scalable software solutions utilizing cloud native technologies.
+                </h5>
             </div>
 
             <div class="nav">
@@ -27,18 +29,18 @@
                 </ul>
             </div>
             <div class="socials">
-                <ul id="socials-list">
+                <div id="socials-list">
                     @* target="_blank allows for links to open in a new tab" *@
-                    <li class="social-link">
-                        <a href="https://github.com/bottrell" target="_blank">github</a>
-                    </li>
-                    <li class="social-link"><a href="https://linkedin.com/in/jordanbottrell"
-                            target="_blank">linkedin</a>
-                    </li>
-                    <li class="social-link">
-                        <a href="https://twitter.com/jordanbottrell" target="_blank">twitter</a>
-                    </li>
-                </ul>
+                    <p class="social-link">
+                        <a href="https://github.com/bottrell" target="_blank" class="icon bi-github"></a>
+                    </p>
+                    <p class="social-link">
+                        <a href="https://linkedin.com/in/jordanbottrell" target="_blank" class="icon bi-linkedin"></a>
+                    </p>
+                    <p class="social-link">
+                        <a href="https://twitter.com/jordanbottrell" target="_blank" class="icon bi-twitter"></a>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="right-half">

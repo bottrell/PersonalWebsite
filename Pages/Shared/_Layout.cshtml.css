@@ -2,26 +2,28 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+  margin-left: 20px;
 }
 
 .main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: #0E0F27;
+
   width: 100vw;
   height: 100vh;
 }
 
 .left-half {
-  background-color: red;
+
+  /*background-color: red; */
   width: 40%;
-  min-width: 400px;
+  min-width: 550px;
   max-height: 60%;
   display: flex;
   flex-direction: column;
@@ -30,8 +32,8 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .right-half {
   min-width: 400px;
-  background-color: purple;
-  width: 40%;
+  /*background-color: purple; */
+  width: 50%;
   text-align: center;
 }
 
@@ -42,21 +44,45 @@ for details on configuring this project to bundle and minify static web assets. 
 
 .nav {
   display: flex;
-  background-color: green;
+  /* background-color: green; */
   width: 50%;
+  font-size: 16px;
 }
 
 .intro {
-  background-color: orange;
+  /*background-color: orange; */
   width: 50%;
 }
 
 .socials {
-  background-color: pink;
+  /*background-color: pink; */
   width: 50%;
-  align-items: start;
 }
 
 .social-link {
-  margin: 10px;
+  padding: 10px;
+}
+
+a {
+  color: #ffff;
+}
+
+#title {
+  font-size: 48px;
+}
+
+#subtitle {
+  font-size: 24px;
+  color: white;
+  margin-top: -30px;
+  font-weight: 500;
+}
+
+#description {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 28px;
 }
