@@ -13,12 +13,21 @@ new ExperienceItemModel("2017 - 2019", "hello 5")
 }
 
 <div>
+
     <partial name="_Aboutme" />
+    <partial name="_Aboutme" />
+    <partial name="_Aboutme" />
+    <partial name="_Aboutme" />
+    <partial name="_Aboutme" />
+
+
+
+
 
     @{
         foreach (ExperienceItemModel position in positions)
         {
-                    <partial name="_Experienceitem" model=@position />
+            <partial name="_Experienceitem" model=@position />
         }
     }
 
