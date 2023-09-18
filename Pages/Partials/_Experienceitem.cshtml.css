@@ -1,12 +1,12 @@
 .experience-container {
     display: flex;
-    width: 100%;
+    width: 60%;
 }
 
 .experience-date {
-    padding: 10px;
+    padding: 5px;
 }
 
 .experience-content {
-    padding: 10px;
+    padding: 5px;
 }

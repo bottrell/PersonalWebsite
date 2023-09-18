@@ -3,14 +3,17 @@
 @{
     ViewData["Title"] = "Home page";
     @using PersonalWebsite.Pages.Partials;
-    ExperienceItemModel asdf = new ExperienceItemModel();
     List<ExperienceItemModel> positions = new List<ExperienceItemModel> {
-new ExperienceItemModel(),
-new ExperienceItemModel(),
+new ExperienceItemModel("September 2023 - Current", "hello"),
+new ExperienceItemModel("2021 - 2023", "hello 2"),
+new ExperienceItemModel("2020 - 2021", "hello 3"),
+new ExperienceItemModel("2018 - 2020", "hello 4"),
+new ExperienceItemModel("2017 - 2019", "hello 5")
 };
 }
 
 <div>
+    <partial name="_Aboutme" />
     @{
         foreach (ExperienceItemModel position in positions)
         {
