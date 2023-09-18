@@ -1,6 +1,12 @@
-.about-me {
-    width: 60%;
+.about-me-section {
     text-align: left;
     padding-top: 20px;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-text {
+    width: 60%;
 }
