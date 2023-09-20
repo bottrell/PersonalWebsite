@@ -58,4 +58,8 @@ span {
         min-width: 400px;
         margin-bottom: -30px;
     }
+
+    .container {
+        padding-left: 20px;
+    }
 }
