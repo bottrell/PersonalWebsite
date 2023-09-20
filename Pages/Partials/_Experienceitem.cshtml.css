@@ -1,12 +1,60 @@
 .experience-container {
     display: flex;
-    width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 .experience-date {
-    padding: 5px;
+    font-size: 18px;
+    min-width: 100px;
+    flex-grow: 1;
+    text-align: start;
 }
 
 .experience-content {
-    padding: 5px;
+    width: 75%;
+    min-width: 400px;
+}
+
+#experience-headline {
+    color: white;
+    font-size: 18px;
+}
+
+#experience-description {
+    font-size: 16px;
+}
+
+#experience-subtitle {
+    font-size: 12px;
+    margin-top: -15px;
+    font-weight: 500;
+}
+
+.experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span {
+    background-color: white;
+    color: black;
+    border-radius: 28px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1875px) {
+    .experience-date {
+        min-width: 400px;
+        margin-bottom: -30px;
+    }
 }

@@ -4,26 +4,29 @@
     ViewData["Title"] = "Home page";
     @using PersonalWebsite.Pages.Partials;
     List<ExperienceItemModel> positions = new List<ExperienceItemModel> {
-new ExperienceItemModel("September 2023 - Current", "hello"),
-new ExperienceItemModel("2021 - 2023", "hello 2"),
-new ExperienceItemModel("2020 - 2021", "hello 3"),
-new ExperienceItemModel("2018 - 2020", "hello 4"),
-new ExperienceItemModel("2017 - 2019", "hello 5")
+                        new ExperienceItemModel(date: "2023 - Current",
+                                                company: "Meijer",
+                                                skills: new List<string> {".NET", "Azure Data Tools", "DataBricks", "Python", "Apache Spark", "Google Cloud Platform"},
+                                                title: "Data Engineer",
+                                                description: 
+                                                "Developing robust backend APIs to support the Meijer Retail Media Network (RMN) and Customer 360 initiatives using Azure and Databricks. Building CI/CD pipelines and performing QA to ensure data accuracy and quality. Gained a ton of exposure to the Google Marketing platform (DV360, GAM, and CM360), Salesforce Datorama, and the Google Cloud platform. Working to transition third-party integrations to homebrew solutions for increased ownership and in-house IP.",
+                                                location: "Grand Rapids, Michigan"
+                        ),
+                        new ExperienceItemModel(date: "2021 - 2023",
+                                                company: "Meijer",
+                                                skills: new List<string> {".NET", "Dynatrace", "Splunk", "Solarwinds", "ServiceNow ITOM", "Azure Functions"},
+                                                title: "Site Reliability Engineer",
+                                                description: 
+                                                "Worked alongside several cross-functional software development teams to enforce observability standards throughout the SDLC. Built monitoring capabilities using APM tools like Dynatrace and Azure Application Insights in the form of alerts, dashboards, and self-healing automation. Established and enforced team standards around Infrastructure-as-code deployments using Terraform and Azure DevOps for CI/CD. Developed APIs and automation to assist in application support and triage using Azure Functions, Azure Logic Apps, and ServiceNow Flow Designer.",
+                                                location: "Grand Rapids, Michigan"
+                        )
 };
 }
 
 <div>
 
-    <partial name="_Aboutme" />
-    <partial name="_Aboutme" />
-    <partial name="_Aboutme" />
-    <partial name="_Aboutme" />
-    <partial name="_Aboutme" />
-
-
-
-
-
+    <partial name="_Aboutme" } />
+    <div style="margin-bottom: 100px;"></div>
     @{
         foreach (ExperienceItemModel position in positions)
         {

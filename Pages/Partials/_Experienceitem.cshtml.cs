@@ -4,12 +4,22 @@ namespace PersonalWebsite.Pages.Partials;
 
 public class ExperienceItemModel : PageModel
 {
-    public string? date { get; set; } = "September 2023 - Current";
-    public string? content { get; set; } = "content goes here";
-    public List<string>? skills { get; set; } = new List<string> { "HTML", "CSS", "JavaScript" };
-    public ExperienceItemModel(string? d, string? c)
+    public string? Date { get; set; }
+    public string? Company { get; set; }
+    public string? Title { get; set; }
+    public string? Description { get; set; }
+    public string? Location { get; set; }
+    public List<string> Skills { get; set; } = new List<string> { "HTML", "CSS", "Javascript", "Typescript", "C#", ".NET Core", "asdfasdfasdf" };
+
+
+    public ExperienceItemModel(string? date = "2023 - Current", string? company = "RDN Labs", List<string>? skills = null,
+                                string? title = "Software Engineer", string? description = "content goes here", string? location = "Chicago")
     {
-        this.date = d;
-        this.content = c;
+        this.Date = date;
+        this.Company = company;
+        this.Skills = skills!;
+        this.Title = title;
+        this.Description = description;
+        this.Location = location;
     }
 }

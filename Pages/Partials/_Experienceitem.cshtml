@@ -1,6 +1,25 @@
 @model ExperienceItemModel
 
 <div class="experience-container">
-    <div class="experience-date">@Model.date</div>
-    <div class="experience-content">@Model.content</div>
+    <div class="container">
+        <div class="experience-date">
+            <p>@Model.Date</p>
+        </div>
+        <div class="experience-content">
+            <h3 id="experience-headline">@Model.Title - @Model.Company</h3>
+            <h5 id="experience-subtitle">@Model.Location</h5>
+            <p id="experience-description">@Model.Description</p>
+            <div class="experience-skills">
+                @{
+                    foreach (var skill in (@Model.Skills).OrderBy(s => s.Length))
+                    {
+                        if (!string.IsNullOrEmpty(skill))
+                        {
+                            <span>@skill</span>
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </div>
 </div>
