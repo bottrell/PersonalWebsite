@@ -17,3 +17,7 @@ body {
   background-color: #0E0F27;
   height: 100vh;
 }
+
+.separator {
+  margin-bottom: 100px;
+}

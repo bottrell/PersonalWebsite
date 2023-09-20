@@ -6,7 +6,7 @@
     List<ExperienceItemModel> positions = new List<ExperienceItemModel> {
                         new ExperienceItemModel(date: "2023 - Current",
                                                 company: "Meijer",
-                                                skills: new List<string> {".NET", "Azure Data Tools", "DataBricks", "Python", "Apache Spark", "Google Cloud Platform"},
+                                                skills: new List<string> {".NET", "Azure Data Factory", "Azure Synapse", "DataBricks", "Python", "Apache Spark", "Google Cloud Platform", "Customer Insights", "Java"},
                                                 title: "Data Engineer",
                                                 description: 
                                                 "Developing robust backend APIs to support the Meijer Retail Media Network (RMN) and Customer 360 initiatives using Azure and Databricks. Building CI/CD pipelines and performing QA to ensure data accuracy and quality. Gained a ton of exposure to the Google Marketing platform (DV360, GAM, and CM360), Salesforce Datorama, and the Google Cloud platform. Working to transition third-party integrations to homebrew solutions for increased ownership and in-house IP.",
@@ -14,11 +14,35 @@
                         ),
                         new ExperienceItemModel(date: "2021 - 2023",
                                                 company: "Meijer",
-                                                skills: new List<string> {".NET", "Dynatrace", "Splunk", "Solarwinds", "ServiceNow ITOM", "Azure Functions"},
+                                                skills: new List<string> {".NET", "Dynatrace", "Splunk", "Solarwinds", "ServiceNow ITOM", "Azure Functions", "Terraform", "API Management"},
                                                 title: "Site Reliability Engineer",
                                                 description: 
-                                                "Worked alongside several cross-functional software development teams to enforce observability standards throughout the SDLC. Built monitoring capabilities using APM tools like Dynatrace and Azure Application Insights in the form of alerts, dashboards, and self-healing automation. Established and enforced team standards around Infrastructure-as-code deployments using Terraform and Azure DevOps for CI/CD. Developed APIs and automation to assist in application support and triage using Azure Functions, Azure Logic Apps, and ServiceNow Flow Designer.",
+                                                "Worked alongside several cross-functional software development teams to enforce observability standards throughout the SDLC. Built monitoring capabilities using APM tools like Dynatrace and Azure Application Insights in the form of alerts, dashboards, and self-healing automation. Established and enforced team standards around Infrastructure-as-code deployments using Terraform and Azure DevOps for CI/CD. Developed APIs and automation to assist in application support and incident triage using Azure Functions, Azure Logic Apps, and ServiceNow Flow Designer.",
                                                 location: "Grand Rapids, Michigan"
+                        ),
+                        new ExperienceItemModel(date: "2020 - 2021",
+                                                company: "Coretek Services",
+                                                skills: new List<string> {"Microsoft Azure", "SCCM", "Intune", "Azure Virtual Desktop", "Windows Server", "Powershell", "Azure Site Recovery", "Virtaulization"},
+                                                title: "Technical Consultant",
+                                                description: 
+                                                "Performed systems administration of several different enterprise cloud environments from managing Virtual Machine deployments to advanced ADDS administration. Led efforts to design, implement, and automate cloud infrastructure deployments using ARM templates and Powershell. Utilized Azure Site Recovery to migrate several client's virtual machine enviroments to Azure. Responded to and triaged high-priority infrastructure and application break/fix events 24/7/365.",
+                                                location: "Farmington Hills, Michigan"
+                        ),
+                        new ExperienceItemModel(date: "2018 - 2020",
+                                                company: "University of Michigan ITS",
+                                                skills: new List<string> {"Hardware Support", "ServiceNow", "Google Workspace", "Windows 10", "Networking", "Microsoft Office Suite"},
+                                                title: "Desktop Support",
+                                                description: 
+                                                "My first real foray into working in an IT environment. Collaborated with full-time desktop support engineers and L1 helpdesk personnel to triage hardware and software issues from UofM faculty. Facilitated new employee onboarding by purchasing and imaging new laptops, as well as procuring and setting up workstations (monitors, keyboards, docking stations, etc.). All the while offering excellent customer service to clients.",
+                                                location: "Ann Arbor, Michigan"
+                        ),
+                        new ExperienceItemModel(date: "2017 - 2019",
+                                                company: "University of Michigan College of Engineering",
+                                                skills: new List<string> {"C++", "Pyton", "Visual Studio", "XCode", "Data Structures", "Algorithms"},
+                                                title: "Instructional Aide (EECS 183)",
+                                                description: 
+                                                "One of the greatest opportunities that I've ever had the pleasure of working. Joined the EECS 183 staff my Sophomore year of college. Worked alongside other instructional aides, graduate student instructors, and professors to build out an ciriculum covering introductory computer science concepts for ~2000 students each semester (I served for 4 semesters). Developed project specifications and supported students in 1:1 office hours as well as a larger group session twice per week.",
+                                                location: "Ann Arbor, Michigan"
                         )
 };
 }
@@ -26,12 +50,13 @@
 <div>
 
     <partial name="_Aboutme" } />
-    <div style="margin-bottom: 100px;"></div>
+    <div class="separator"></div>
     @{
         foreach (ExperienceItemModel position in positions)
         {
             <partial name="_Experienceitem" model=@position />
         }
     }
+    <div class="separator"></div>
 
 </div>

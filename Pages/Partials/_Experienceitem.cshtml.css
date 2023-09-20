@@ -10,6 +10,7 @@
     min-width: 100px;
     flex-grow: 1;
     text-align: start;
+    color: white;
 }
 
 .experience-content {
@@ -27,9 +28,9 @@
 }
 
 #experience-subtitle {
-    font-size: 12px;
+    font-size: 16px;
     margin-top: -15px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .experience-skills {
