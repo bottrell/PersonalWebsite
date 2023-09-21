@@ -1,0 +1,15 @@
+@page "/posts/{id:int}"
+@model PostViewModel
+@using Markdig
+@using Microsoft.AspNetCore.Components
+
+@{
+    var result = Markdown.ToHtml(@Model.markdownText, new MarkdownPipelineBuilder().UseAdvancedExtensions().Build());
+    PostViewModel test = new PostViewModel();
+    var fromModel = await test.Test(1);
+    var markdownFromModel = Markdown.ToHtml(fromModel, new MarkdownPipelineBuilder().UseAdvancedExtensions().Build());
+}
+<div>
+    @Html.Raw(result)
+    @Html.Raw(markdownFromModel)
+</div>
