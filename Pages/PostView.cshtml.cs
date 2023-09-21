@@ -24,11 +24,13 @@ public class PostViewModel : PageModel
     public async Task<string> GetPostContent(int id)
     {
         string contents;
-        string filePath = $"../CachedPosts/{id}.md";
+        string filePath = $"testFiles/{id}.md";
+        Console.WriteLine(filePath);
         // Check for cached local file
         if (System.IO.File.Exists(filePath))
         {
             contents = await System.IO.File.ReadAllTextAsync(filePath);
+            Console.WriteLine("loading from cache....");
         }
         else
         {
@@ -42,7 +44,8 @@ public class PostViewModel : PageModel
                 contents = await sr.ReadToEndAsync();
             }
 
-            Console.WriteLine(contents);
+            Console.WriteLine("loading via Blob storage....");
+
         }
         return contents;
     }
