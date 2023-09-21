@@ -4,12 +4,13 @@
 @using Microsoft.AspNetCore.Components
 
 @{
-    var result = Markdown.ToHtml(await @Model.GetPostContent(@Model.Id), new
+    string result;
+    result = Markdown.ToHtml(await @Model.GetPostContent(@Model.Id), new
     MarkdownPipelineBuilder().UseAdvancedExtensions().Build());
 }
 <div>
     <h1>Post: @Model.Id</h1>
-
-    @Html.Raw(result)
-
+    <div class="post-content">
+        @Html.Raw(result)
+    </div>
 </div>

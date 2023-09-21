@@ -11,7 +11,7 @@ public class PostViewModel : PageModel
 {
     BlobServiceClient _blobServiceClient;
     public int Id { get; set; } = 404;
-    public string PostContent { get; set; } = "Nothing found";
+    public string? PostContent { get; set; } = null;
     string _containerName = "posts";
 
     public PostViewModel()
@@ -23,16 +23,27 @@ public class PostViewModel : PageModel
 
     public async Task<string> GetPostContent(int id)
     {
-        BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(_containerName);
-        BlobClient blobClient = containerClient.GetBlobClient($"{id}.md");
-        var reader = await blobClient.OpenReadAsync();
         string contents;
-        using (var sr = new StreamReader(reader))
+        string filePath = $"../CachedPosts/{id}.md";
+        // Check for cached local file
+        if (System.IO.File.Exists(filePath))
         {
-            contents = await sr.ReadToEndAsync();
+            contents = await System.IO.File.ReadAllTextAsync(filePath);
         }
+        else
+        {
+            // Get content from online
+            BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(_containerName);
+            BlobClient blobClient = containerClient.GetBlobClient($"{id}.md");
+            var reader = await blobClient.OpenReadAsync();
 
-        Console.WriteLine(contents);
+            using (var sr = new StreamReader(reader))
+            {
+                contents = await sr.ReadToEndAsync();
+            }
+
+            Console.WriteLine(contents);
+        }
         return contents;
     }
 
