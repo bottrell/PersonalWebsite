@@ -23,16 +23,7 @@ public class PostViewModel : PageModel
 
     public async Task<string> GetPostContent(int id)
     {
-        string contents;
-        string filePath = $"testFiles/{id}.md";
-        Console.WriteLine(filePath);
-        // Check for cached local file
-        if (System.IO.File.Exists(filePath))
-        {
-            contents = await System.IO.File.ReadAllTextAsync(filePath);
-            Console.WriteLine("loading from cache....");
-        }
-        else
+        string contents = "";
         {
             // Get content from online
             BlobContainerClient containerClient = _blobServiceClient.GetBlobContainerClient(_containerName);
@@ -49,7 +40,6 @@ public class PostViewModel : PageModel
         }
         return contents;
     }
-
 
     public async void OnGet(int id)
     {
