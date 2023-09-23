@@ -17,14 +17,13 @@ h1 {
 #post-container {
     display: flex;
     flex-direction: column;
-    align-items: left;
     width: 90%;
 }
 
 #post-content {
-    width: 100%;
+    width: auto;
 }
 
-#post-content.pre {
+#pre.post-content {
     background-color: white;
 }

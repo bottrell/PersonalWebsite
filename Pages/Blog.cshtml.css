@@ -20,14 +20,14 @@ h2.preview-title {
 }
 
 .post-preview {
-    background-color: lightskyblue;
     border-radius: 18px;
     margin: 10px;
     display: flex;
     justify-content: start;
     align-items: start;
     flex-direction: column;
-
+    opacity: 0.6;
+    background-color: rgba(0, 191, 2255, 0.76);
 }
 
 .post-link {

@@ -5,8 +5,17 @@
 
 @{
     string postContent = "asdf";
-    postContent = Markdown.ToHtml(@Model.blogPost.Content, new
-    MarkdownPipelineBuilder().UseAdvancedExtensions().Build());
+    try
+    {
+        postContent = Markdown.ToHtml(@Model.blogPost.Content, new
+        MarkdownPipelineBuilder().UseAdvancedExtensions().Build());
+    }
+    catch
+    {
+        postContent = "404 - Something went wrong!";
+    }
+    Layout = "_Layout";
+    ViewData["Title"] = @Model.blogPost.Title;
 }
 <div id="post-section">
     <div id="post-container">

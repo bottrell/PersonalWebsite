@@ -15,3 +15,7 @@ else {
     document.querySelector('#about-me-link').classList.add('active');
 }
 
+// Code to remove the subtitle when on a post page
+if (window.location.href.includes("post") || window.location.href.includes("blog")) {
+    document.querySelector('#description').remove();
+}
