@@ -40,9 +40,25 @@ for details on configuring this project to bundle and minify static web assets. 
 .nav {
   display: flex;
   /* background-color: green; */
-  width: 50%;
-  font-size: 16px;
+  font-size: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
 }
+
+#nav-ul {
+  list-style-type: none;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.li {
+  display: flex;
+}
+
 
 .intro {
   /*background-color: orange; */
@@ -88,4 +104,19 @@ a {
   flex-direction: column;
   width: auto;
   padding-left: 100px;
+}
+
+.nav-item {
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.nav-item:hover {
+  color: white;
+  font-size: 24px;
+}
+
+.active {
+  color: rgba(0, 191, 255, 0.76);
+  font-size: 24px;
 }

@@ -8,21 +8,22 @@
 }
 
 <div id="blog-container">
-    <h2> All Blog Posts </h2>
-    @{
-        foreach (Post post in Model.posts!)
-        {
-
-            <div class="post-preview">
+    <div id="inner-container">
+        <h2> All Blog Posts </h2>
+        @{
+            foreach (Post post in Model.posts!)
+            {
                 <a class="post-link" href=@($"/posts/{@post.PostId}")>
-                    <div class="post-content">
-                        <h2 class="preview-title">@post.Title</h2>
-                        <p>asdfasdfasf</p>
+                    <div class="post-preview">
+                        <div class="post-content">
+                            <h2 class="preview-title">@post.Title</h2>
+                            <p>asdfasdfasf</p>
+                        </div>
                     </div>
+
                 </a>
-            </div>
 
-
+            }
         }
-    }
+    </div>
 </div>
