@@ -59,10 +59,8 @@ public class PostViewModel : PageModel
 
     public void OnGet(int id)
     {
-
-        var posts = _ctx.Posts.ToList();
-        Console.WriteLine(posts.Count());
-
+        blogPost = _ctx.Posts.FirstOrDefault(x => x.PostId == id);
+        // TODO Maybe add some logic to redirect if the link is broken
     }
 
 }
