@@ -26,5 +26,11 @@ h2.preview-title {
     justify-content: start;
     align-items: start;
     flex-direction: column;
+
+}
+
+.post-link {
+
     text-decoration: none;
+    color: white;
 }
