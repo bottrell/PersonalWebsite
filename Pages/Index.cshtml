@@ -50,12 +50,13 @@
 <div>
 
     <partial name="_Aboutme" } />
-    @{
+    <div id="experience">    @{
         foreach (ExperienceItemModel position in positions)
         {
             <partial name="_Experienceitem" model=@position />
         }
-    }
+    }</div>
+
     <div class="separator"></div>
 
 </div>

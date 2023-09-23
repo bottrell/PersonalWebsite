@@ -1,0 +1,25 @@
+@page
+
+@model BlogViewModel
+@using PersonalWebsite.Utilities
+
+@{
+    Layout = "_Layout";
+}
+
+<div id="blog-container">
+    <h2> All Blog Posts </h2>
+    @{
+        foreach (Post post in Model.posts!)
+        {
+            <div class="post-preview">
+                <div class="post-content">
+                    <h2 class="preview-title">@post.Title</h2>
+                    <p>asdfasdfasf</p>
+                </div>
+
+            </div>
+
+        }
+    }
+</div>

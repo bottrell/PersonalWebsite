@@ -3,8 +3,8 @@ namespace PersonalWebsite.Utilities;
 public class Post
 {
     public int PostId { get; set; }
-    public string Title { get; set; }
+    public string? Title { get; set; }
 
     // Content will be a string of markdown that we can convert on the page to html
-    public string Content { get; set; }
+    public string? Content { get; set; }
 }

@@ -1,0 +1,29 @@
+#blog-container {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-left: 10px
+}
+
+.post-content {
+    padding: 10px;
+}
+
+h2.preview-title {
+    color: rgb(72, 72, 72);
+}
+
+.post-preview {
+    background-color: lightskyblue;
+    border-radius: 18px;
+    width: 70%;
+    margin: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
