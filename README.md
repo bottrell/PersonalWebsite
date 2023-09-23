@@ -9,3 +9,5 @@ The backend logic for the blog portion allows me to write posts in Markdown synt
 * Dynamic styling for the nav bar 
 * "spotlight" effect wherever the client cursor is using javascript (make the area directly around the cursor a slightly lighter shade of blue)
 * Additional scalability and styling for mobile
+
+Note to self: Need to populate the BlogDatabaseConnection Environment variable to connect to the DB.

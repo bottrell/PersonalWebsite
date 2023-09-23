@@ -4,6 +4,7 @@ namespace PersonalWebsite.Utilities;
 
 public class BloggingContext : DbContext
 {
+
     public BloggingContext(DbContextOptions<BloggingContext> opts) : base(opts)
     {
     }
