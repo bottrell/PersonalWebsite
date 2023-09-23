@@ -4,9 +4,9 @@
 @using Microsoft.AspNetCore.Components
 
 @{
-    string result;
-    result = Markdown.ToHtml(await @Model.GetPostContent(@Model.Id), new
-    MarkdownPipelineBuilder().UseAdvancedExtensions().Build());
+    string result = "asdf";
+    //result = Markdown.ToHtml(await @Model.GetPostContent(@Model.Id), new
+    // MarkdownPipelineBuilder().UseAdvancedExtensions().Build());
 }
 <div>
     <h1>Post: @Model.Id</h1>

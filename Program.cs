@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.EntityFrameworkCore;
+using PersonalWebsite.Utilities;
 
 namespace PersonalWebsite;
 
@@ -14,6 +16,10 @@ public class Program
         {
             options.PageViewLocationFormats.Add("/Pages/Partials/{0}" + RazorViewEngine.ViewExtension);
         });
+
+        builder.Services.AddDbContext<BloggingContext>(options =>
+            options.UseNpgsql(Environment.GetEnvironmentVariable("BlogDatabaseConnection")
+        ));
 
         var app = builder.Build();
 
