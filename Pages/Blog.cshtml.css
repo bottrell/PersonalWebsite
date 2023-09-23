@@ -26,4 +26,5 @@ h2.preview-title {
     justify-content: start;
     align-items: start;
     flex-direction: column;
+    text-decoration: none;
 }

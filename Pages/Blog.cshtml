@@ -12,13 +12,16 @@
     @{
         foreach (Post post in Model.posts!)
         {
-            <div class="post-preview">
-                <div class="post-content">
-                    <h2 class="preview-title">@post.Title</h2>
-                    <p>asdfasdfasf</p>
-                </div>
 
+            <div class="post-preview">
+                <a href=@($"/posts/{@post.PostId}")>
+                    <div class="post-content">
+                        <h2 class="preview-title">@post.Title</h2>
+                        <p>asdfasdfasf</p>
+                    </div>
+                </a>
             </div>
+
 
         }
     }
