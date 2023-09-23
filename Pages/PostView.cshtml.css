@@ -1,0 +1,30 @@
+#post-section {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 18px;
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+
+    color: #e1e1e1;
+}
+
+h1 {
+    color: #ffff;
+}
+
+#post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 90%;
+}
+
+#post-content {
+    width: 100%;
+}
+
+#post-content.pre {
+    background-color: white;
+}
