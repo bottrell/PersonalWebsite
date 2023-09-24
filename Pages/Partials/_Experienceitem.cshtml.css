@@ -6,10 +6,9 @@
 }
 
 .experience-date {
-    font-size: 18px;
+    font-size: 14px;
     min-width: 100px;
-    flex-grow: 1;
-    text-align: start;
+    text-align: left;
     color: white;
 }
 
@@ -61,5 +60,6 @@ span {
 
     .container {
         padding-left: 20px;
+        justify-content: start;
     }
 }
